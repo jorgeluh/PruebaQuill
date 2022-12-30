@@ -4,7 +4,7 @@
         <title>Prueba de Quill con menciones</title>
         <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet" />
         <link href="quill.mention.min.css" rel="stylesheet" />
-        <link href="tamaniosFuente.css" rel="stylesheet" />
+        <link href="opciones.css" rel="stylesheet" />
     </head>
     <body>
         <p>Área de edición</p>
@@ -18,6 +18,11 @@
             var Size = Quill.import("attributors/style/size");
             Size.whitelist = tamanios;
             Quill.register(Size, true);
+
+            const fuentes = [ false, "times-new-roman", "cascadia" ];
+            var Font = Quill.import('formats/font');
+            Font.whitelist = fuentes;
+            Quill.register(Font, true);
 
             const menciones = [
                 { id: "1", value: "nombre del cliente" },
@@ -39,7 +44,7 @@
                 modules: {
                     toolbar: [
                         [{ size: tamanios }],
-                        [{ font: [ "Arial" ]}],
+                        [{ font: fuentes }],
                         [ "bold", "italic" ],
                         [{ list: "bullet" }, { list: "ordered" }]
                     ],

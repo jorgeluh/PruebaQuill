@@ -1,3 +1,12 @@
+/* Ajuste de ancho de listas desplegables */
+.ql-snow .ql-picker.ql-size {
+    width: 60px;
+}
+.ql-snow .ql-picker.ql-font {
+    width: 160px !important;
+}
+
+/* Tamaños disponibles */
 .ql-snow .ql-picker.ql-size .ql-picker-label::before,
 .ql-snow .ql-picker.ql-size .ql-picker-item::before {
   content: "13";
@@ -66,4 +75,27 @@
 .ql-snow .ql-size .ql-picker-item[data-value="28px"]::before {
     content: "28";
     font-size: 28px !important;
+}
+
+/* Fuentes disponibles */
+.ql-snow .ql-picker.ql-font .ql-picker-label::before,
+.ql-snow .ql-picker.ql-font .ql-picker-item::before {
+  content: "Arial";
+}
+.ql-snow .ql-font .ql-picker-label[data-value="times-new-roman"]::before,
+.ql-snow .ql-font .ql-picker-item[data-value="times-new-roman"]::before {
+  content: "Times New Roman";
+  font-family: "Times New Roman" !important;
+}
+.ql-snow .ql-font .ql-picker-label[data-value="cascadia"]::before,
+.ql-snow .ql-font .ql-picker-item[data-value="cascadia"]::before {
+  content: "Cascadia Mono";
+  font-family: "Cascadia Mono" !important;
+}
+
+.ql-font-times-new-roman {
+    font-family: "Times New Roman";
+}
+.ql-font-cascadia {
+    font-family: "Cascadia Mono";
 }
