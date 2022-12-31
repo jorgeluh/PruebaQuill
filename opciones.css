@@ -99,3 +99,34 @@
 .ql-font-cascadia {
     font-family: "Cascadia Mono";
 }
+
+/* Estilos de listas ordenadas disponibles */
+.ql-snow .ql-numeracion .ql-picker-label[data-value="decimales"]::before,
+.ql-snow .ql-numeracion .ql-picker-item[data-value="decimales"]::before {
+    content: "1. 2. 3...";
+    font-size: small;
+    font-weight: bold;
+}
+.ql-snow .ql-numeracion .ql-picker-label[data-value="alfabetico-minusculas"]::before,
+.ql-snow .ql-numeracion .ql-picker-item[data-value="alfabetico-minusculas"]::before {
+    content: "a. b. c...";
+    font-size: small;
+    font-weight: bold;
+}
+.ql-snow .ql-numeracion .ql-picker-label[data-value="romanos-mayusculas"]::before,
+.ql-snow .ql-numeracion .ql-picker-item[data-value="romanos-mayusculas"]::before {
+    content: "I. II. III...";
+    font-size: small;
+    font-weight: bold;
+}
+
+.ql-editor ol > li {
+    list-style-type: lower-alpha;
+}
+.ql-editor ol > li::before {
+    display: none;
+}
+.ql-editor ol li:not(.ql-direction-rtl),
+.ql-editor ul li:not(.ql-direction-rtl) {
+    padding-left: 0em;
+}

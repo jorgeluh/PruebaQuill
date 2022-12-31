@@ -43,10 +43,12 @@
                 theme: "snow",
                 modules: {
                     toolbar: [
+                        [{ align: [] }],
                         [{ size: tamanios }],
                         [{ font: fuentes }],
                         [ "bold", "italic" ],
-                        [{ list: "bullet" }, { list: "ordered" }]
+                        [{ list: "bullet" }, { list: "ordered" }],
+                        [{ numeracion: [ "decimales", "alfabetico-minusculas", "alfabetico-mayusculas", "romanos-mayusculas" ] }]
                     ],
                     mention: {
                         mentionDenotationChars: [ "@" ],
